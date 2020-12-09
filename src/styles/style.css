@@ -89,15 +89,18 @@ body {
   margin: 2em 10em;
 }
 
+#results {
+  margin: 2em;
+}
+
 #results .results__info {
   width: 90%;
-  margin-left: 10%;
-  margin-top: 2.5em;
-  /* color: #f3f3f3; */
+  /* margin-left: 40%; */
+  margin-top: 3.5em;
 }
 
 #results .results__info .results__main__description {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   letter-spacing: 0.1rem;
   padding-left: 0.3rem;
   margin-bottom: 0.2em;
@@ -109,6 +112,7 @@ body {
   /* margin-bottom: 1rem; */
   font-weight: 800;
   letter-spacing: 0.1rem;
+  margin-top: 0.3em
 }
 
 #results .results__info .results__main__temp {
@@ -140,11 +144,16 @@ body {
   content: '\00B0 F';
 }
 
+#results .results__info .results__failed {
+  margin-left: 45%;
+}
+
 /**
  * Loading animation
 */
 
 .results__loading__loader {
+  margin-left: 40%;
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
   border-radius: 50%;

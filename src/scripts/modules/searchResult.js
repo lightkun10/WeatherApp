@@ -7,16 +7,24 @@ const SearchResult = (() => {
 
   const _showFailure = (msg) => {
     if (msg) {
-      _resultInfo.innerHTML = `${msg}`;
+      _resultInfo.innerHTML = `
+        <div class="results__failed">
+          ${msg}
+        </div>
+      `;
     } else {
-      _resultInfo.innerHTML = 'Uh oh. Something wrong is happening.';
+      _resultInfo.innerHTML = `
+        <div class="results__failed">
+            Uh oh. Something wrong is happening.
+        </div>
+      `;
     }
   };
 
   const _showSuccess = (result) => {
     _loading.style.display = 'none';
     _resultInfo.innerHTML = `
-      <div class="results__main">
+      <div class="results__icon">
         <img src="${API_ENDPOINT.ICON(result.weather[0].icon)}" alt="">
       </div>
       <div class="results__main">
